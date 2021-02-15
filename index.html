@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien_Rechner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <section>
+        <h1>Kalorienrechner</h1>
+        <form action="">
+            <label for="">Körpergröße</label>
+            <br>
+            <input type="number" name="" id="height">
+            <br>
+            <label for="">Alter</label>
+            <br>
+            <input type="number" name="" id="age">
+            <br>
+            <label for="">Gewicht</label>
+            <br>
+            <input type="number" name="" id="weight">
+            <br>
+            <input type="radio" name="gender" id="male">
+            <label for="">Männlich</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="">Weiblich</label>
+            <br>
+            <label for="">Arbeits- und Freizeitaktivität</label>
+            <br>
+            <select name="" id="activity">
+                <option value="sleep">Schlafen</option>
+                <option value="sit">Nur Sitzen und Liegen</option>
+                <option value="sittingWork">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                    Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="workWithWalk">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="standingWork">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                    Handwerker, Mechaniker, Hausfrauen
+                </option>
+                <option value="hardWork">Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select>
+            <br>
+            <input type="button" value="Berechne" onclick="Kalorie()">
+        </form>
+        <div>
+            <p>Grundumsatz:</p>
+            <div id="grundumsatzOutput"></div>
+            <p>Gesamtumsatz:</p>
+            <div id="gesamtumsatzOutput"></div>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
